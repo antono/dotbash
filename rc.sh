@@ -71,11 +71,19 @@ if [ -f ~/.bash/compl.sh ]; then
 	source ~/.bash/compl.sh
 fi
 
+if [ -f ~/.bash/z.sh ]; then
+	source ~/.bash/z.sh
+fi
+
 export PS1="${debian_chroot:+${BRIGHT_RED}$debian_chroot${CYAN} >> }${BRIGHT_YELLOW}\u${CYAN}@${BRIGHT_RED}\h:${BRIGHT_YELLOW}\w${BRIGHT_YELLOW}> ${NORMAL}${RESET}"
 
 export DEBFULLNAME="Antono Vasiljev"
 export DEBEMAIL="antono.vasiljev@gmail.com"
+
 export PATH=/home/antono/bin:$PATH
-export PATH=/var/lib/gems/1.8/bin/:$PATH
+export PATH=/home/antono/bin/jruby-1.4.0/bin:$PATH
+export PATH=/home/antono/.gem/ruby/1.8/bin:$PATH
+
+export GEM_HOME=/home/antono/.gem/ruby/1.8
 
 umask a=rx,ug+w

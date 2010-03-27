@@ -13,6 +13,12 @@ alias grepr='grep -R'
 alias tailf='less -R -N +F'
 alias cl='for i in `seq 1 100` ;do echo; done;clear;'
 alias suod="sudo"
+alias jr="jruby -S"
+alias sudo='sudo env PATH=$PATH'
+alias pgr='ps aux | grep '
+alias be='bundle exec'
+alias be19='~/.gem/ruby/1.9.1/bin/bundle exec'
+alias bundle19='ruby1.9.1 ~/.gem/ruby/1.9.1/bin/bundle'
 
 # http://www.andreafrancia.it/trash/#Usage
 #alias rm='trash'
