@@ -5,4 +5,9 @@ if [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion
 fi
 
+if [ -f ~/.bash/completions/z.sh ]; then
+	source ~/.bash/completions/z.sh
+fi
+
+
 complete -C ~/.bash/completions/rake_completion -o default rake

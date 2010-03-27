@@ -71,10 +71,6 @@ if [ -f ~/.bash/compl.sh ]; then
 	source ~/.bash/compl.sh
 fi
 
-if [ -f ~/.bash/z.sh ]; then
-	source ~/.bash/z.sh
-fi
-
 export PS1="${debian_chroot:+${BRIGHT_RED}$debian_chroot${CYAN} >> }${BRIGHT_YELLOW}\u${CYAN}@${BRIGHT_RED}\h:${BRIGHT_YELLOW}\w${BRIGHT_YELLOW}> ${NORMAL}${RESET}"
 
 export DEBFULLNAME="Antono Vasiljev"
