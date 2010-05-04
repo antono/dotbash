@@ -14,7 +14,6 @@ alias cl='for i in `seq 1 100` ;do echo; done;clear;'
 alias grepr='grep -R'
 alias pgr='ps aux | grep '
 alias tailf='less -R -N +F'
-alias sudo='sudo env PATH=$PATH' # sudo, use my $PATH
 
 # Common typos
 alias suod="sudo"
@@ -42,3 +41,6 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
 	alias fgrep='fgrep --color=auto'
 	alias egrep='egrep --color=auto'
 fi
+
+
+alias redcar="cd ~/Code/ruby/redcar && jruby bin/redcar"
